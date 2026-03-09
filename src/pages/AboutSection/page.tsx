@@ -96,7 +96,7 @@ const AboutSection: React.FC = () => {
               
               <div className="pt-2">
                 <a 
-                  href="/resume/preethiVResume.docx" 
+                  href="/resume/preethi-venkatesan-resume.pdf" 
                   download="Preethi_Venkatesan_Resume.docx"
                   className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-slate-800 text-cyan-400 border border-cyan-500/30 font-medium hover:bg-cyan-500 hover:text-white transition-all duration-300 hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] group"
                 >

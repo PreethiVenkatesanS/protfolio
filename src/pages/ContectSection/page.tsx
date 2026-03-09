@@ -104,7 +104,7 @@ const ContactSection: React.FC = () => {
            transition={{ duration: 0.5, delay: 0.4 }}
         >
           <a 
-            href="/resume/preethiVResume.docx" 
+            href="/resume/preethi-venkatesan-resume.pdf" 
             download="Preethi_Venkatesan_Resume.docx"
             className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-cyan-500 text-slate-900 font-bold hover:bg-cyan-400 transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] group transform hover:-translate-y-0.5"
           >

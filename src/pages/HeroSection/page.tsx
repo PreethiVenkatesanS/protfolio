@@ -37,7 +37,7 @@ const HeroSection: React.FC = () => {
           </motion.div>
 
           <motion.h1 
-            className="text-5xl md:text-4xl font-extrabold text-white leading-tight mb-4 font-mono flex flex-wrap gap-x-3"
+            className="text-xl lg:text-3xl font-extrabold text-white leading-tight mb-4 font-mono flex flex-wrap gap-x-3"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.1 }}
