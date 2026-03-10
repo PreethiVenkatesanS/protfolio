@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-[120px] -z-10 mix-blend-screen pointer-events-none"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] -z-10 mix-blend-screen pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full flex flex-col-reverse md:flex-row items-center gap-12 md:gap-24 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-16 relative z-10">
         
         {/* Left Content Area (Text) */}
         <motion.div 
@@ -37,7 +37,7 @@ const HeroSection: React.FC = () => {
           </motion.div>
 
           <motion.h1 
-            className="text-xl lg:text-3xl font-extrabold text-white leading-tight mb-4 font-mono flex flex-wrap gap-x-3"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4 font-mono flex flex-wrap items-center gap-x-4 justify-center md:justify-start"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.1 }}
@@ -45,25 +45,25 @@ const HeroSection: React.FC = () => {
               hidden: { opacity: 0 },
               visible: {
                 opacity: 1,
-                transition: { staggerChildren: 0.1, delayChildren: 0.5 }
+                transition: { staggerChildren: 0.15, delayChildren: 0.4 }
               }
             }}
           >
-            {"Frontend Developer".split("").map((char, index) => (
-              <motion.span 
-                key={index}
+            {["Frontend", "Developer"].map((word, wordIndex) => (
+              <motion.span
+                key={wordIndex}
                 variants={{
-                  hidden: { opacity: 0, y: 50, rotateX: -90 },
+                  hidden: { opacity: 0, y: 40, rotateX: -90 },
                   visible: { 
                     opacity: 1, 
                     y: 0, 
                     rotateX: 0,
-                    transition: { type: "spring", damping: 12, stiffness: 200 }
-                   }
+                    transition: { type: "spring", damping: 14, stiffness: 180 }
+                  }
                 }}
-                className={`inline-block ${char === ' ' ? 'w-4' : ''} bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent hover:scale-125 transition-transform duration-200 cursor-default`}
+                className="inline-block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
               >
-                {char}
+                {word}
               </motion.span>
             ))}
           </motion.h1>
@@ -111,7 +111,7 @@ const HeroSection: React.FC = () => {
 
         {/* Right Content Area (Image) */}
         <motion.div 
-          className="flex-1 relative flex justify-center items-center w-full max-w-[320px] md:max-w-md lg:max-w-lg"
+          className="relative flex justify-center items-center w-full max-w-[260px] sm:max-w-[300px] md:max-w-md lg:max-w-lg mx-auto md:mx-0"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: false, amount: 0.3 }}
