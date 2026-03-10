@@ -12,7 +12,7 @@ const AboutSection: React.FC = () => {
       year: "2019 - 2022",
       description: "Completed my Bachelor's degree with a strong foundation in Computer Applications, Programming logic, and web develoment fundamentals. This academic experience helped build my interest in frontend development and modern web technologies.",
       icon: "🎓",
-      image:"/images/collegeimg.jpg"
+      image:"/images/collegeimg.webp"
     },
     {
       id: 2,
@@ -155,7 +155,7 @@ const AboutSection: React.FC = () => {
                     {item.icon}
                   </span>
 
-                  {/* Card Content */}
+                  {/* Card Content */} 
                   <div className="bg-slate-800/40 p-6 md:p-8 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-colors duration-300 group shadow-lg flex flex-col sm:flex-row gap-6 items-start">
                     
                     {/* Render Image if exists */}

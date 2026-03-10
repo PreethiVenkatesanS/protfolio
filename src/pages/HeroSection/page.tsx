@@ -136,7 +136,7 @@ const HeroSection: React.FC = () => {
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           >
             <img 
-              src="/images/image.png" 
+              src="/images/image.webp"
               alt="Preethi - Developer" 
               className="w-full h-full object-cover"
             />
